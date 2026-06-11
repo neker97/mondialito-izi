@@ -371,7 +371,7 @@ function initials(name) {
 
 // Load data from GitHub
 async function loadExcelFromGitHub() {
-  const url = 'https://raw.githubusercontent.com/neker97/mondialito-izi/main/html-files/DEF_Mondiali_2026_MASTER.xlsx';
+  const url = 'https://raw.githubusercontent.com/neker97/mondialito-izi/main/html-files/DEF_Mondiali_2026_MASTER.xlsx?t=' + Date.now();
   try {
     const response = await fetch(url);
     if (!response.ok) throw new Error('File not found');
